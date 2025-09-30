@@ -73,6 +73,28 @@ class Main {
         
     }
 
+    public static Node deleteNodebyValue(Node head, int x) {
+        
+        if(head==null || head.data==x){
+            return head.next;
+        }
+        Node temp=head;
+        Node prev=null;
+        while(temp!=null){
+            
+            if(temp.data==x){
+                prev.next=prev.next.next;
+                break;
+            }
+            prev=temp;
+            temp=temp.next;
+        }
+        return head;
+           
+        
+    }
+    
+
 
     public static void main(String[] args) {
         int[] arr = {12, 5, 6, 8};
