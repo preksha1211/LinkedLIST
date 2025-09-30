@@ -1,4 +1,4 @@
-(two pass solution)
+(two pass solution ,data replacement)
 class Solution {
     public Node segregate(Node head) {
         int one=0;
