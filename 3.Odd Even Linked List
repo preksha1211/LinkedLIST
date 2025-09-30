@@ -1,4 +1,4 @@
-(data replacement solution)
+(data replacement solution&& two pass solution)
 class Solution {
     public ListNode oddEvenList(ListNode head) {
         if (head == null) return null;
